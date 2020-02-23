@@ -24,6 +24,8 @@ Two data sources are:
 
 See the `programs/README.md` file for further details.
 
+Two additional utility scripts are present, for packaging up the contents of the git repository. They are not needed to either create figures and tables, or to compile the article.
+
 ## Structure
 
 ### Data
