@@ -35,6 +35,25 @@ Output folders are listed in `config.R`. By default,
  - figures are in the `(BASEPATH)/images` folder
  - tables (and CSV files) are in the `(BASEPATH)/tables` folder
 
+### Mapping tables and figures to article
+
+| Name of file | Figure/ Table in article | Program to create |
+|--------------|--------------------------|-------------------|
+|Screenshot_aer_data_citation.png | Figure 1 | Manually created |
+| figure_migration_files.png | Figure 2 | `03_copy_migration_figures.R`| 
+| figure_migration_doi_by_year.png | Figure 3 | `03_copy_migration_figures.R`| 
+| figure_migration_software_pkgs.png | Figure 4 | `03_copy_migration_figures.R`| 
+| figure_migration_software_years_pct.png | Figure  5| `03_copy_migration_figures.R`| 
+| n_assessments_journal_plot.png | Figure 6 | `05_jira_stats_graphs.R`| 
+| n_rounds_plot.png | Figure 7 | `05_jira_stats_graphs.R`| 
+| revision_round_length_hist.png | Figure  8| `05_jira_stats_graphs.R`| 
+| total_length_hist.png | Figure 9| `05_jira_stats_graphs.R`| 
+| author_response_hist.png | Figure 10 | `05_jira_stats_graphs.R`| 
+| figure_rctgrowth.png | Figure 11 | `02_analysis-rct.R`| 
+| figure_preregistrations.png | Figure 12 | `02_analysis-rct.R`| 
+| figure_preanalysisplans.png | Figure 13 | `02_analysis-rct.R`| 
+| table_software.tex | Table 1 | `07_print_migration_tables.R` |
+
 References
 ----------
 AEA RCT Registry. 2020. “Registrations   in   the   AEA   RCT   Registry   (2013-04 to 2020-01).” Harvard Dataverse UNF:6:kWiM5wm1x75KKsxWAAqr4g==, https://doi.org/10.7910/DVN/DFMLIU.
@@ -44,15 +63,3 @@ Vilhuber, Lars. 2020b. "Data and code for:Data files for AEA Repository migratio
 Vilhuber,  Lars. 2020c.  “Process  data  for  the AEA  Pre-publication  Verification  Service.” American Economic Association [publisher],https://doi.org/10.3886/E117876V1.
 
 
-| figure_migration_files.png | | | 
-| figure_migration_doi_by_year.png | | | 
-| figure_migration_software_pkgs.png | | | 
-| figure_migration_software_years_pct.png | | | 
-| n_assessments_journal_plot.png | | | 
-| n_rounds_plot.png | | | 
-| revision_round_length_hist.png | | | 
-| total_length_hist.png | | | 
-| author_response_hist.png | | | 
-| figure_rctgrowth.png | | | 
-| figure_preregistrations.png | | | 
-| figure_preanalysisplans.png | | | 
