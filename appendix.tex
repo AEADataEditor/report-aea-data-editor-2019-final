@@ -1,0 +1,29 @@
+\section{Contributions}
+
+LV wrote most of the text and conducted most of the analyses. JT and KW wrote the section on the AEA RCT Redistry and conducted the statistical analysis for that section. David Wasser prepared the analysis of the pre-publication verification system.
+
+\section{Replication Team}
+The Replication Team in 2019 was ably lead by David Wasser. The following members of the Replication Lab provided valuable assistance to the Data Editor in one or more of his tasks:
+
+%first,initial,last,year
+\csvreader[/csv/head=true,%
+/csv/head to column names=true,%
+/csv/late after line={,},%
+/csv/late after last line=.,%
+]%
+{data/replicationlab_members.txt}{}{ \first \xspace \initial \xspace \last }
+
+\section{Data Availability}
+The document, data, and programs for this report are available at \url{https://github.com/AEADataEditor/report-aea-data-editor-2019-interim/}.
+%\FloatBarrier
+
+\section{Definitions}
+In this article, we adopt  definitions articulated by \citet{Bollen2015} and \citet{NationalAcademiesofSciencesEngineeringandMedicine2019}, among others. 
+\begin{itemize}
+	\item \textit{Reproducibility}  refers to ``the ability [$\dots$] to duplicate the results of a prior study using the same materials and procedures as were used by the original investigator,'' and is related to the ``narrow" sense of replication of \cite{PesaranJ.Appl.Econom.2003}. Use of the ``same procedures'' may imply using the same computer code or re-implementing the statistical procedures in a different software package. Generally, this is equivalent to ``\textit{computational reproducibility}.''  
+	\item \textit{Replicability} refers to ``the ability of a researcher to duplicate the results of a prior study if the same procedures are followed but new data are collected'' \citep[ ``wider'' sense of replication]{PesaranJ.Appl.Econom.2003}.
+	\item \textit{Generalizability} refers to the extension of the scientific findings to other populations, contexts, and time frames, perhaps using different methods \citep[ ``scientific replication'']{Hamermesh2017-kq}.
+	
+\end{itemize}
+
+%In general, we will identify as ``replication materials'' those materials (data, code, information) that can augment an article in support of any of the above goals.

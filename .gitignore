@@ -1,0 +1,14 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.gz
+.Rproj.user
+.httr-oauth
+*.csv
+*.RDS
+*.Rdata
+*.xlsx
+*.fdb_latexmk
+*.fls
