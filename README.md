@@ -1,6 +1,10 @@
 # 2019 Report by the AEA Data Editor
 This is the report for 2019. 
 
+## Published version
+
+> Vilhuber, Lars, James Turrito, and Keesler Welch. 2020. "Report by the AEA Data Editor." AEA Papers and Proceedings, 110: 764-75. DOI: [10.1257/pandp.110.764](https://doi.org/10.1257/pandp.110.764)
+
 ## Locations
 The repository at [https://github.com/AEADataEditor/report-aea-data-editor-2019-final](https://github.com/AEADataEditor/report-aea-data-editor-2019-final) contains text, code, data, and output from running the code. 
 
@@ -8,7 +12,7 @@ The deposit at [https://doi.org/10.3886/E117884V1](https://doi.org/10.3886/E1178
 
 ## Citing the code and data
 
-> Vilhuber, Lars, David Wasser, and James Tu-ritto.2020. “Code and Data for:  Report for2019  by  the  AEA  Data  Editor.”  AmericanEconomic  Association  [publisher],https://doi.org/10.3886/E117884V1
+> Vilhuber, Lars, David Wasser, and James Turitto.2020. “Code and Data for:  Report for2019  by  the  AEA  Data  Editor.”  AmericanEconomic  Association  [publisher],https://doi.org/10.3886/E117884V1
 
 ## External dependencies
 
