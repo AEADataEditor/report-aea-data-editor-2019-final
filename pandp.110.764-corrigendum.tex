@@ -1,0 +1,49 @@
+% AEJ-Article.tex for AEA last revised 22 June 2011
+\documentclass[PP]{AEA}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+\title{Corrigendum for: Report for 2019 by the AEA Data Editor }
+\shortTitle{Report by Data Editor}
+\author{Lars Vilhuber\thanks{%
+Cornell University, lars.vilhuber@cornell.edu. },
+ James Turitto\thanks{%
+J-PAL, jturitto@povertyactionlab.org.},
+Keesler Welch\thanks{%
+J-PAL, keesler@povertyactionlab.org.}
+}
+\date{\today}
+\pubMonth{May}
+\pubYear{2020}
+\pubVolume{110}
+\pubIssue{--}
+\JEL{}
+\Keywords{reproducibility; replicability; science of science}
+
+
+
+
+\maketitle
+
+
+\section*{Corrigendum 2020-08-04}
+
+After publication, Alan Riley (Stata) pointed out a discrepancy between Table 1 and Figure 5, which should be depicting (on average) the same data. This was corrected in the code associated with the AEA Repository migration, and carried through to this document. See \href{https://github.com/AEADataEditor/aea-supplement-migration/commit/530f1e9ad8059e68815b5836db33155c990154b0}{the commit implementing the code change}.
+
+Original text (pg. 767, 2nd column):
+\begin{quote}
+Most supplements (48.37 percent) use Stata at least partially, followed by
+Matlab (37.47 percent) (Table 1 and Figure 4).
+\end{quote}
+
+Corrected text:
+\begin{quote}
+Most supplements (72.96 percent) use Stata at least partially, followed by
+Matlab (22.45 percent) (Table 1 and Figure 4).
+\end{quote}
+
+
+\end{document}
+

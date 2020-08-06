@@ -44,8 +44,8 @@
 
 \iftoggle{draft}{
 \usepackage{draftwatermark}
-\SetWatermarkText{DRAFT}
-\SetWatermarkScale{1}
+\SetWatermarkText{Revised version}
+\SetWatermarkScale{0.5}
 \SetWatermarkLightness{0.85}%
 }{\usepackage[final]{draftwatermark}}
 
@@ -445,6 +445,25 @@ All data and code used to generate figures and tables in this article can be fou
 \appendix
 
 \input{appendix.tex}
+
+\clearpage
+
+\section*{Corrigendum 2020-08-04}
+
+After publication, Alan Riley (Stata) pointed out a discrepancy between Table 1 and Figure 5, which should be depicting (on average) the same data. This was corrected in the code associated with the AEA Repository migration, and carried through to this document. See \href{https://github.com/AEADataEditor/aea-supplement-migration/commit/530f1e9ad8059e68815b5836db33155c990154b0}{the commit implementing the code change}.
+
+Original text (pg. 767, 2nd column):
+\begin{quote}
+Most supplements (48.37 percent) use Stata at least partially, followed by
+Matlab (37.47 percent) (Table 1 and Figure 4).
+\end{quote}
+
+Corrected text:
+\begin{quote}
+Most supplements (72.96 percent) use Stata at least partially, followed by
+Matlab (22.45 percent) (Table 1 and Figure 4).
+\end{quote}
+
 
 \end{document}
 
