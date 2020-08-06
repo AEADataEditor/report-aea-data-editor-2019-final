@@ -17,6 +17,12 @@ source(here::here("programs","config.R"),echo=TRUE)
 mylibs <- c("stringr")
 lapply(as.list(mylibs),pkgTest)
 
+if ( download_raw == TRUE) {
+  tmpfile <- file.path(migbase,"tmp.zip")
+  download.file(paste0(migurlbase,"v",migversion,".zip"),destfile = tmpfile)
+  unzip(tmpfile,exdir = migbase)
+}
+
 if ( process_raw == TRUE ) {
   
 # copy figures

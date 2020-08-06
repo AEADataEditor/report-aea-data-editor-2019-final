@@ -11,6 +11,7 @@ Data sources
    - `raw`: Raw data as downloaded from the internal systems at the AEA RCT Registry by James Turitto. Since providing this data, the AEA RCT Registry now provides snapshots of the data at [https://dataverse.harvard.edu/dataverse/aearegistry](https://dataverse.harvard.edu/dataverse/aearegistry). The data here would be similar to AEA RCT Registry(2020), though that has not been verified.
    - `generated`: Simplified data, based on the raw data. Provided as part of this archive. Created by `01_prepare-rct.R`. 
 - `externals/aea-supplement-migration/`: Data and Figures from Vilhuber (2020b) and https://github.com/AEADataEditor/aea-supplement-migration. 
+   - Download the relevant release (corrected version: v20200515, URL: https://github.com/AEADataEditor/aea-supplement-migration/archive/v20200515.zip), unpack into `externals/`
    - `programs/`: Source for figures copied to and provided as part of the `images` directory in this repository. Copied using `03_copy_migration_figures.R`
    - `data/generated/`: Source for tables, copied using `06_copy_migration_tables.R` and provided as part of this repository. 
 - `tables`: This directory contains data copied using `06_copy_migration_tables.R` and serves as an input to processing in `07_print_migration_tables.R`
@@ -53,6 +54,10 @@ Output folders are listed in `config.R`. By default,
 | figure_preregistrations.png | Figure 12 | `02_analysis-rct.R`| 
 | figure_preanalysisplans.png | Figure 13 | `02_analysis-rct.R`| 
 | table_software.tex | Table 1 | `07_print_migration_tables.R` |
+
+Changelog
+---------
+After publication, Alan Riley (Stata) pointed out a discrepancy between Table 1 and Figure 5, which should be depicting (on average) the same data. This was corrected in the code associated with the AEA Repository migration (see https://github.com/AEADataEditor/aea-supplement-migration/commit/530f1e9ad8059e68815b5836db33155c990154b0 for the commit implementing the code change).
 
 References
 ----------

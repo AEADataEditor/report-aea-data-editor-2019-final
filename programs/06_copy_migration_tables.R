@@ -15,10 +15,10 @@ lapply(as.list(packages),pkgTest)
 if ( process_raw == TRUE ) {
   
 # copy table data
-migration_tables = list.files(path = file.path(migbase,"data","generated"),pattern = "*doi_by_software.csv")
+migration_tables = list.files(path = file.path(miggen),pattern = "*doi_by_software.csv")
 
 mycopy <- function(item) {
-  file.copy(file.path(migbase,"data","generated",item),file.path(tables,str_replace(item,"table","table_migration")),
+  file.copy(file.path(miggen,item),file.path(tables,str_replace(item,"table","table_migration")),
             overwrite = TRUE, copy.date = TRUE)
 }
 

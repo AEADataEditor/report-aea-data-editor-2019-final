@@ -2,8 +2,9 @@
 # CONFIG: parameters affecting processing
 # ###########################
 
-process_raw <- FALSE
-
+## These control whether the external data is downloaded and processed.
+process_raw <- TRUE
+download_raw <- TRUE
 
 # ###########################
 # CONFIG: define paths and filenames for later reference
@@ -18,10 +19,15 @@ setwd(basepath)
 # From James Turitto
 rctraw <- file.path(basepath, "data","rct","raw")
 rctgen <- file.path(basepath, "data","rct","generated")
+
 # from external git submodule aea-supplement-migration
-migbase <- file.path(basepath,"externals","aea-supplement-migration")
-miggen <- file.path(migbase, "data","generated")
-migprog <- file.path(migbase,"programs")
+# later versions: download of released versions
+migversion <- "20200515"
+migurlbase <- "https://github.com/AEADataEditor/aea-supplement-migration/archive/"
+migbase <- file.path(basepath,"externals")
+migdir <- file.path(migbase,paste0("aea-supplement-migration-",migversion))
+miggen <- file.path(migdir, "data","generated")
+migprog <- file.path(migdir,"programs")
 # for Jira stuff
 jirabase <- file.path(basepath,"data","jira","confidential")
 jiraanon <- file.path(basepath,"data","jira","anon")
@@ -31,7 +37,7 @@ images <- file.path(basepath, "images" )
 tables <- file.path(basepath, "tables" )
 programs <- file.path(basepath,"programs")
 
-for ( dir in list(images,tables,programs,rctgen)){
+for ( dir in list(images,tables,programs,rctgen,migbase)){
   if (file.exists(dir)){
   } else {
     dir.create(file.path(dir))
